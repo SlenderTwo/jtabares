@@ -82,7 +82,8 @@ li a:hover:not(.active) {
     justify-content: center;
 }
 .galeria img{
-    max-width: 25%;
+    max-width: 35%;
+    max-height: fit-content;
     padding: 1rem;
 }
   
