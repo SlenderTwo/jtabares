@@ -123,6 +123,7 @@ footer{
     margin-left: 1%;
     margin-right: 0.7%;
     border: 50px solid black;
+    font-family:fantasy;
 }
 @media screen and (min-width:200px) and (max-width: 600px)  {
    
