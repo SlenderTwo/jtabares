@@ -1,6 +1,7 @@
 @font-face {
     font-family: Cedarville;
-    src:  url(CedarvilleCursive-Regular.ttf) ;
+;
+    src: url(CedarvilleCursive-Regular.ttf) ;
 }
 
 .TitolP{
@@ -8,6 +9,10 @@
     color: white;
     background-color: black;
     border: 50px solid black;
+    font-family:fantasy;
+}
+h1,h2,h3{
+    font-family:fantasy;
 
 }
 .Banner{    /*Banner de la pagina*/
@@ -20,14 +25,12 @@
     position: absolute;
     top: 10%;
     left: 30%;
-    font-size: 500%;
+    font-size: 100%;
     color: black;  
 }
-.nav{
-}
+
 ul {
     text-align: center;
-
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -70,8 +73,12 @@ li a:hover:not(.active) {
     text-align: center;
     flex-wrap: wrap;
     margin: 1%;
-    height:315; 
-    width:560;
+    height: 315;
+    width: 560;
+}
+.Videos iframe {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #Images360{
@@ -97,6 +104,10 @@ li a:hover:not(.active) {
 .Lloc{
     text-align: center;
 }
+.Lloc iframe{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 #Info{
     text-align: center;
@@ -109,7 +120,50 @@ footer{
     text-align: center;
     background-color: black;
     color: white;
-    height: 30%;
-    width: 100%;
+    margin-left: 1%;
+    margin-right: 0.7%;
     border: 50px solid black;
+}
+@media screen and (min-width:200px) and (max-width: 600px)  {
+   
+    .Description{
+        margin-left: 30%;
+        height: 50%;
+        width: 50%;
+        text-align: justify;
+        columns: 1;
+    }
+    ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 23%;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 37%;
+        overflow: auto;
+    } 
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 12px;
+        text-decoration: none;
+    } 
+    li a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }  
+    .Videos{
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 1%;
+        height: 315;
+        width: 560;
+        margin-left: 15%;
+    }
 }
