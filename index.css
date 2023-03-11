@@ -1,5 +1,5 @@
 body{
-   background-color:  #031d40;
+    background-color:  #031d40;
 }
 .BannerTITLE{
     color: white;
@@ -14,7 +14,7 @@ body{
 .descarga{
     margin-top: 2%;
     margin-bottom: 1%;
-    margin-left: 1%;
+    margin-left: 15%;
     margin-right: 1%;       
 }
 .dow{
@@ -61,13 +61,13 @@ a:link, a:visited, a:active,.cont {
     background-color: transparent;
 }
 .rs-sidenav-subtle {
-   background-color: transparent!important;
+    background-color: transparent!important;
 }
 .rs-sidenav-subtle {
-   background-color:  #031d40;
+    background-color:  #031d40;
 }
 .rs-sidenav-collapse-in {
-    width: 90%;
+    width: 100%;
 }
 .rs-sidenav {
     -webkit-transition: width .2s ease-in;
@@ -79,8 +79,6 @@ a:link, a:visited, a:active,.cont {
 /* Style the tab */
 .tab {
     overflow: hidden;
-    /*border: 1px solid #ccc;
-    background-color: #f1f1f1;*/
 }
 /* Style the buttons inside the tab */
 .tab button {
@@ -96,7 +94,7 @@ a:link, a:visited, a:active,.cont {
 }
 /* Change background color of buttons on hover */
 .tab button:hover {
-        background-color:  #031d40;
+    background-color:  #031d40;
 }
 /* Create an active/current tablink class */
 .tab button.active {
@@ -123,7 +121,7 @@ a:link, a:visited, a:active,.cont {
 /*Menu de idioma*/
 /* Style tab links */
 .tablink2 {
-   /* background-color: #555;*/
+    /* background-color: #555;*/
     float: left;
     border: none;
     outline: none;
@@ -149,79 +147,6 @@ a:link, a:visited, a:active,.cont {
 }
 .tabcontent2:hover{
     background-color:  #031d40;
-
-}
-
-
-/*Galeria de Imagenes*/
-.galery {
-    vertical-align: middle;
-}  
-/* Position the image container (needed to position the left and right arrows) */
-.container,.container2 {
-    position: relative;
-}  
-/* Hide the images by default */
-.mySlides,.mySlides2 {
-    display: none;
-}  
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
-}  
-/* Next & previous buttons */
-.prev,.prev2,.next,.next2 {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-/* Position the "next button" to the right */
-.next,.next2 {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,.next:hover,.prev2:hover,.next2:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-/* Number text (1/3 etc) */
-.numbertext,.numbertext2 {
-    color: white;
-    font-size: 17px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    margin-top: 1%;
-    margin-left: 1%;
-
-}
-/* Container for image text */
-.caption-container,.caption-container2 {
-    text-align: center;
-    /*background-color: #222;*/
-    padding: 2px 16px;
-    color: white;
-}  
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-/* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-.active,.demo:hover {
-    opacity: 1;
 }
 
 footer{
@@ -251,23 +176,87 @@ footer{
     margin-bottom: 10%;
 }
 
+/*Galeria*/
+img {
+    vertical-align: middle;
+}
+  /* Position the image container (needed to position the left and right arrows) */
+.container,.container2  {
+    position: relative;
+}
+  /* Hide the images by default */
+.mySlides,.mySlides2 {
+    display: none;
+}
+  /* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}  
+  /* Next & previous buttons */
+.prev,.next,.prev2,.next2{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}  
+  /* Position the "next button" to the right */
+.next,.next2{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover,.next:hover,.prev2:hover,.next2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+} 
+  /* Number text (1/3 etc) */
+.numbertext,.numbertext2{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+.active,.demo:hover {
+    opacity: 1;
+}
 
 @media screen and (min-width:200px) and (max-width: 600px)  {
     .tablink2 {
         /* background-color: #555;*/
-         float: left;
-         border: none;
-         outline: none;
-         cursor: pointer;
-         padding: 14px 16px;
-         font-size: 17px;
-         width: 35%;
-     }
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 35%;
+    }
     .Home2img{
         width:150px;
         height:150px;
         border-radius: 60%;
         text-shadow: 10%;
-    
     }
 }
