@@ -206,17 +206,19 @@
             <div class="container">
                 <div class="mySlides">
                     <div class="numbertext">1 / 3</div>
-                    <img src="Imatges index/Ex1.png" style="width:100%">
+                    <a href="https://jtabaresalgaba.netlify.app/exercicis/ex1.html"><img src="Imatges index/Ex1.png" style="width:100%"></a>
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">2 / 3</div>
-                    <img src="Imatges index/Ex2.png" style="width:100%">
+                    <a href="https://jtabaresalgaba.netlify.app/exercicis/ex2.html"><img src="Imatges index/Ex2.png" style="width:100%"></a>
+                    
                 </div>
             
                 <div class="mySlides">
                     <div class="numbertext">3 / 3</div>
-                    <img src="Imatges index/Ex3.png" style="width:100%">
+                    <a href="https://jtabaresalgaba.netlify.app/exercicis/ex3.html"><img src="Imatges index/Ex3.png" style="width:100%"></a>
+                    
                 </div>
                 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -379,19 +381,20 @@
             <br>
             <!--Poner galeria de imagenes-->
             <div class="container">
-                <div class="mySlides">
+                <div class="mySlides2">
                     <div class="numbertext">1 / 3</div>
-                    <img src="Imatges index/Ex1.png" style="width:100%">
+                    <a href="https://jtabaresalgaba.netlify.app/exercicis/ex1.html"><img src="Imatges index/Ex1.png" style="width:100%"></a>
                 </div>
 
-                <div class="mySlides">
+                <div class="mySlides2">
                     <div class="numbertext">2 / 3</div>
-                    <img src="Imatges index/Ex2.png" style="width:100%">
+                    <a href="https://jtabaresalgaba.netlify.app/exercicis/ex2.html"><img src="Imatges index/Ex2.png" style="width:100%"></a>
                 </div>
 
-                <div class="mySlides">
+                <div class="mySlides2">
                     <div class="numbertext">3 / 3</div>
-                    <img src="Imatges index/Ex3.png" style="width:100%">
+                    <a href="https://jtabaresalgaba.netlify.app/exercicis/ex2.html"><img src="Imatges index/Ex3.png" style="width:100%"></a>
+                    
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -418,17 +421,29 @@
             function showSlides(n) {
                 let i;
                 let slides = document.getElementsByClassName("mySlides");
+                let slides2 = document.getElementsByClassName("mySlides2");
+
                 let dots = document.getElementsByClassName("demo");
                 let captionText = document.getElementById("caption");
                 if (n > slides.length) {slideIndex = 1}
+                if (n > slides2.length) {slideIndex = 1}
+
                 if (n < 1) {slideIndex = slides.length}
+                if (n < 1) {slideIndex = slides2.length}
+
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
+                for (i = 0; i < slides2.length; i++) {
+                    slides2[i].style.display = "none";
+                }
+
                 for (i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
                 slides[slideIndex-1].style.display = "block";
+                slides2[slideIndex-1].style.display = "block";
+
                 dots[slideIndex-1].className += " active";
                 captionText.innerHTML = dots[slideIndex-1].alt;
             }
