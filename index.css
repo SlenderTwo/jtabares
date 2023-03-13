@@ -314,13 +314,23 @@ img {
         border-radius: 60%;
         text-shadow: 10%;
     }
-    #Spanish{
-        margin-left: 16%;
-    }
-    #English{
-        margin-left: 16%;
-    }
 
+    .sidebar-nav {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        right: 1;
+        margin-bottom: 1%;
+        background-color: transparent;
+        font-family: "Lucida Console", "Courier New", monospace;
+        
+    }
+    .but{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 1%;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width: 800px)  {
@@ -329,5 +339,21 @@ img {
     }
     #English{
         margin-left: 7%;
+    }
+    .sidebar-nav {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        right: 1;
+        margin-bottom: 1%;
+        background-color: transparent;
+        font-family: "Lucida Console", "Courier New", monospace;
+        
+    }
+    .but{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 1%;
     }
 }
