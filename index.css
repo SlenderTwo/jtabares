@@ -72,6 +72,9 @@ body{
     margin-right: 10%;
     font-family: "Lucida Console", "Courier New", monospace;
 }
+.Home2{
+    margin-right: 10%;
+}
 .Home2img{
     width:250px;
     height:250px;
@@ -301,6 +304,9 @@ img {
         padding: 14px 16px;
         font-size: 17px;
         width: 50%;
+    }
+    .Home2{
+        margin-right: 10%;
     }
     .Home2img{
         width:150px;
