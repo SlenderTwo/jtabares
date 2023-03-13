@@ -99,7 +99,7 @@ a:link, a:visited, a:active,.cont {
     position: fixed;
     right: 1;
     padding-right: 1%;
-    bottom: 5%;
+    bottom: 1%;
     background-color: transparent;
     font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -215,14 +215,14 @@ footer{
     display: flex;
     flex-direction: row;
     position: fixed;
-    top: 1;
+    margin-top: 41%;
 
 }
+
 .bi1,.bi2,.bi3{
     width:30px;
     height:30px;
     border: 5px solid transparent;
-    margin-top: 150%;
     margin-bottom: 10%;
 }
 
