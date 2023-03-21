@@ -329,6 +329,12 @@ img {
 }
 
 @media screen and (min-width:200px) and (max-width: 600px)  {
+    #Spanish{
+        margin-left: 2%;
+    }
+    #English{
+        margin-left: 2%;
+    }
     .tablink2 {
         /* background-color: #555;*/
         float: left;
@@ -358,7 +364,6 @@ img {
     .sidebar-nav {
         display: flex;
         flex-direction: row;
-        position: fixed;
         right: 1;
         top: 0%;
         margin-bottom: 200%;
@@ -390,13 +395,13 @@ img {
 .sidebar-nav {
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position:fixed;
     right: 1;
-    top: 0%;
-    margin-bottom: 100%;
+    bottom:0;
+    margin-bottom: 3%;
     background-color: transparent;
     font-family: "Lucida Console", "Courier New", monospace;
-    
+    position: absolute;
 }
 .but{
     display: flex;
