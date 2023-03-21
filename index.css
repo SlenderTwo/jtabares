@@ -93,6 +93,7 @@ a:link, a:visited, a:active,.cont {
 
 /* Menu */
 .sidebar-nav {
+    font-size: 125%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -102,6 +103,7 @@ a:link, a:visited, a:active,.cont {
     bottom: 1%;
     background-color: transparent;
     font-family: "Lucida Console", "Courier New", monospace;
+    margin-left: 1%;
 }
 .rs-sidenav-subtle {
     background-color: transparent!important;
@@ -167,6 +169,40 @@ a:link, a:visited, a:active,.cont {
     to {opacity: 1;}
 }
 
+/*Menu2*/
+.Menu2{
+    list-style-type: none;
+    margin:0;
+    padding-bottom: 3%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 100%;
+    right: 1;
+
+}
+
+.active {
+    float: left;
+    background-color: #333;
+
+}
+
+.active a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.active a:hover {
+    background-color: #111;
+}
+
+
 /*Menu de idioma*/
 /* Style tab links */
 .tablink2 {
@@ -181,8 +217,6 @@ a:link, a:visited, a:active,.cont {
     background-color:  #031d40;
     color: white;
     font-family: "Lucida Console", "Courier New", monospace;
-
-
 }
 .tablink2:hover {
     background-color: black;
