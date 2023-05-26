@@ -127,8 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (selectedChoice) {
       const selectedAnswer = parseInt(selectedChoice.value);
       const currentQuestion = questions[currentQuestionIndex - 1];
-      if (selectedAnswer === currentQuestion.correctAnswer) {
-        score++;
+      if (selectedAnswer === currentQuestion.correctAnswer) { //Si la respuesta selecionada por el usuario es la correcta sumamos 1
+        score++; 
         correctAnswers++;
       }
       nextButton.style.display = 'block';
