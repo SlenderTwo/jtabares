@@ -19,6 +19,8 @@
       <img id="imgFantasma" src="assets/ghlogo.svg" >
       <img id="imgCasa" src="assets/cyber.jpg" >
       <a-asset-item id="dracula" src="assets/ghost_in_the_shell_geisha_mask/scene.gltf"></a-asset-item>
+      <a-asset-item id="dracula2" src="assets/geisha_mask/scene.gltf"></a-asset-item>
+
     </a-assets>
   
     <a-entity camera look-controls wasd-controls="true">
@@ -45,6 +47,9 @@
        </a-sphere>
        <a-entity gltf-model="#dracula" position="0  2 -5" scale="2 2 2"
                   animation="property: position; dur: 2000; from: 0 2 -5; to: 0 0 -5; dir: alternate; loop: true">        
+        </a-entity>
+        <a-entity gltf-model="#dracula2" position="-5  2 5" scale="2 2 2"
+                  animation="property: position; dur: 2000; from: -5 2 5; to: -5 0 5; dir: alternate; loop: true">        
         </a-entity>
       <a-plane position="-1.5 0 1.5" src="#imgSortida" rotation="0 150 0"  transparent="true" mylink="href: https://twitter.com/listocomics/status/1259820800712024066"></a-plane>
     </a-scene>
