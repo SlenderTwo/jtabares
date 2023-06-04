@@ -3,11 +3,12 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
     <body>
-      <a-assets>
-        <a-asset-item  id="Escenario" src="assets/cyberpunk_apartment/scene.gltf"></a-asset-item>
-      </a-assets>
       <a-scene>
-        <a-entity gltf-model="#Escenario" position="0 -3.5 -5" scale="0.02 0.02 0.02"></a-entity>
+        <a-assets>
+          <a-asset-item id="scene1" src="assets/cyberpunk_apartment/scene.gltf"></a-asset-item>
+        </a-assets>
+        
+        <a-entity gltf-model="#scene1"></a-entity>
       </a-scene>
     </body>
 </html>
